@@ -9,7 +9,7 @@
          "38": "img/icon38.png"
       },
       "default_popup": "popup.html",
-      "default_title": "Cavetube Notification"
+      "default_title": "Cavetube Notify"
    },
    "content_scripts": [ {
       "js": [ "js/favorite.js" ],
@@ -21,12 +21,10 @@
       "16": "img/icon16.png",
       "48": "img/icon48.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgn0jqTZgZg4qkuhcArVQN58H1tXgz0Te7qd3RbQJAHLCSngqvCUaQoQfJIlt+CaEzaZoAncToGeJtrMBmkzforQyz4YX8k7Nazo3tYj3HybzFIV1Rsq5rmLigWgyma3uFuvd2lhK0heqyhrvoGBImciMr62SJzgEi54Wv2vol/UvJAVJkXqBc9W4c7tJ6G9TihnU6BuVpWQcQmlP3VwMLa+myT/G/N0agwPT3+DP4NdYQPPRGQYEsrURtdSgleR1EWbvbkjpZL/l91BdhTiEzKWAEsE3ncQmQbtTjHVoM8plhEyoc7Q03uf3dL+mkbLotN/KetY8fMkdxpJFsxEhlQIDAQAB",
    "manifest_version": 2,
    "name": "Cavetube Notify",
    "options_page": "options.html",
    "permissions": [ "http://rss.cavelis.net/*", "storage" ],
    "short_name": "かべつべ通知",
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.64"
 }
