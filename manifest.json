@@ -24,7 +24,7 @@
    "manifest_version": 2,
    "name": "Cavetube Notify",
    "options_page": "options.html",
-   "permissions": [ "http://rss.cavelis.net/*", "storage" ],
+   "permissions": [ "http://rss.cavelis.net/*", "storage", "notifications" ],
    "short_name": "かべつべ通知",
-   "version": "1.64"
+   "version": "1.76"
 }

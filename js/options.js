@@ -1,5 +1,6 @@
 /*
   v1.63 ユーザの重複と空白名削除機能
+  v1.76 デスクトップ通知の設定を追加
 */
 
 function maintenance(userArry) {
@@ -30,6 +31,7 @@ function save_options() {
 
   chrome.storage.sync.set({
     userList: userArry,
+    desknote: document.getElementById("desknote").checked
   }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
@@ -46,12 +48,14 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
   chrome.storage.sync.get({
-    userList: ""
+    userList: "",
+    desknote: true
   }, function(items) {
     for(i=0; i<items.userList.length; i++){
       text = document.getElementById('userList').value
       document.getElementById('userList').value = text + items.userList[i] + "\n";
     }
+    document.getElementById("desknote").checked = items.desknote;
   });
 }
 
